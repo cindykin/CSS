@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SH-animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>SHORT HAND-animation</h2>
+    <hr>
+
+    <ul>
+        <li>shorthand untuk : (tak apa2 jika salah satu nilai dibwh hilang, selama masih sesuai urutan)
+            <ul>
+                <li>animation-name (required) - nama keyframe utk mengaitkannya ke properti animation</li>
+                <li>animation-duration (required) - durasi animasi</li>
+                <li>animation-timing-function - menentukan kurva dari kecepatan animasi, memungkinkan animasi untuk mengubah kecepatan selama durasinya</li>
+                <li>animation-delay - menentukan penundaan untuk memulai animasi, klo negatif animasi akan dimulai seolah-olah telah diputar selama N detik</li>
+                <li>animation-iteration-count - menentukan berapa kali animasi harus dijalankan</li>
+                <li>animation-direction - nentukan apakah animasi harus dimainkan maju, mundur, atau dalam siklus alternatif</li>
+                <li>animation-fill-mode - nentukan gaya untuk elemen target saat animasi tidak diputar (sebelum dimulai, setelah berakhir, atau keduanya)</li>
+                <li>animation-play-state - menentukan apa animasi harus dijalankan/dipause</li>
+                <li>initial - mengubahnya ke nilai default</li>
+                <li>inherit - mewarisi nilai property parent elemennya</li>
+            </ul>
+        </li>
+        <li>cara pakai :</li>
+    </ul>
+
+    <pre><code>
+        div {
+            <span>animation</span>: hehe 5s linear 2s infinite alternate;
+        }
+    </code></pre><br>
+
+    <h3>preview :</h3>
+    <iframe src="reference-prop.html" name="hehe" height="300px" width="80%" title="fixed"></iframe>
+    <h3><a href="examples/A-sh-animation.html" target="hehe">Click to view Example of shorthand animation</a></h3><br><br>
+
+    <a href="../property/reference-prop.html">Back to Reference</a>
+</body>
+
+</html>

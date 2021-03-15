@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        
+        .one {
+            animation-name: hehe;
+            animation-duration: 5s;
+        }
+        
+        @keyframes hehe {
+            0% {
+                background-color: red;
+            }
+            25% {
+                background-color: yellow;
+            }
+            50% {
+                background-color: blue;
+            }
+            100% {
+                background-color: green;
+            }
+        }
+        
+        .two {
+            position: relative;
+            /* RELATIVE BUAT LEBIH MUDAH PINDAH POSISI ELEMEN */
+            animation-name: apalu;
+            animation-duration: 5s;
+        }
+        
+        @keyframes apalu {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+        
+        .three {
+            position: relative;
+            animation-name: gayaabis;
+            animation-duration: 5s;
+            animation-delay: 2s;
+        }
+        
+        @keyframes gayaabis {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+        
+        .four {
+            position: relative;
+            animation-name: gwhebat;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes gwhebat {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+        
+        .five {
+            position: relative;
+            animation-name: pintar;
+            animation-duration: 5s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+        }
+        
+        @keyframes pintar {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+        
+        div {
+            position: relative;
+            animation: akubisa 5s infinite;
+        }
+        
+        #div1 {
+            animation-timing-function: linear;
+        }
+        
+        #div2 {
+            animation-timing-function: ease;
+        }
+        
+        #div3 {
+            animation-timing-function: ease-in;
+        }
+        
+        #div4 {
+            animation-timing-function: ease-out;
+        }
+        
+        #div5 {
+            animation-timing-function: ease-in-out;
+        }
+        
+        @keyframes akubisa {
+            from {
+                left: 0px;
+            }
+            to {
+                left: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">simple</div>
+    <div class="two">middle</div>
+    <div class="three">delay 2s</div>
+    <div class="four">looping</div>
+    <div class="five">arahan</div>
+    <div id="div1">linear</div>
+    <div id="div2">ease</div>
+    <div id="div3">ease-in</div>
+    <div id="div4">ease-out</div>
+    <div id="div5">ease-in-out</div>
+</body>
+
+</html>

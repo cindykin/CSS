@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-size</title>
+    <style>
+        #auto {
+            border: 2px solid black;
+            padding: 25px;
+            background: url(pattern.jpeg);
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+        
+        #length {
+            border: 2px solid black;
+            padding: 25px;
+            background: url(pattern.jpeg);
+            background-repeat: no-repeat;
+            background-size: 300px 100px;
+        }
+        
+        #perc {
+            border: 2px solid black;
+            padding: 25px;
+            background: url(pattern.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        #perc2 {
+            border: 2px solid black;
+            padding: 25px;
+            background: url(pattern.jpeg);
+            background-repeat: no-repeat;
+            background-size: 75% 50%;
+        }
+        
+        #contain {
+            border: 2px solid black;
+            padding: 25px;
+            background: url(pattern.jpeg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        #cover {
+            border: 2px solid black;
+            padding: 25px;
+            background: url(pattern.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>AUTO</h1> <br>
+    <h2>background-size: auto (default):</h2>
+    <div id="auto">
+        <h2>Hello World</h2>
+        <p>The background image is displayed in its original size.</p>
+    </div> <br>
+
+    <h1>LENGTH</h1><br>
+    <h2>background-size: 300px 100px:</h2>
+    <div id="length">
+        <h2>Hello World</h2>
+        <p>Here, the background image is set to 300px wide and 100px high.</p>
+    </div> <br>
+
+    <h1>PERCENT</h1><br>
+    <h2>background-size: 100% 100%:</h2>
+    <div id="perc">
+        <h2>Hello World</h2>
+        <p>The size of the background image is set in percent of the parent element; 100% width and 100% height.</p>
+    </div>
+
+    <h2>background-size: 75% 50%:</h2>
+    <div id="perc2">
+        <h2>Hello World</h2>
+        <p>The size of the background image is set in percent of the parent element; 75% width and 50% height.</p>
+    </div> <br>
+
+    <h1>CONTAIN</h1><br>
+    <h2>background-size: contain:</h2>
+    <div id="contain">
+        <h2>Hello World</h2>
+        <p>The background image is resized to make sure the image is fully visible.</p>
+    </div> <br>
+
+    <h1>COVER</h1><br>
+    <h2>background-size: cover:</h2>
+    <div id="cover">
+        <h2>Hello World</h2>
+        <p>The background image is resized to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges.</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linear-gradient</title>
+    <style>
+        #grad1 {
+            height: 200px;
+            background-image: linear-gradient(red, yellow);
+        }
+        
+        #grad2 {
+            height: 200px;
+            background-image: linear-gradient(to right, red, yellow);
+        }
+        
+        #grad3 {
+            height: 200px;
+            background-image: linear-gradient(to bottom right, red, yellow);
+        }
+        
+        #grad4 {
+            height: 100px;
+            background-image: linear-gradient(0deg, red, yellow);
+        }
+        
+        #grad5 {
+            height: 100px;
+            background-image: linear-gradient(90deg, red, yellow);
+        }
+        
+        #grad6 {
+            height: 100px;
+            background-image: linear-gradient(180deg, red, yellow);
+        }
+        
+        #grad7 {
+            height: 100px;
+            background-image: linear-gradient(-90deg, red, yellow);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Linear Gradient - Top to Bottom</h1>
+    <p>This linear gradient starts red at the top, transitioning to yellow at the bottom:</p>
+
+    <div id="grad1"></div> <br><br>
+
+
+    <h1>Linear Gradient - Left to Right</h1>
+    <p>This linear gradient starts red at the left, transitioning to yellow (to the right):</p>
+
+    <div id="grad2"></div> <br><br>
+
+
+    <h1>Linear Gradient - Diagonal</h1>
+    <p>This linear gradient starts red at top left, transitioning to yellow (at bottom right):</p>
+
+    <div id="grad3"></div> <br><br><br><br><br>
+
+
+
+    <h1>Linear Gradients - Using Different Angles</h1>
+
+    <div id="grad4" style="text-align:center;">0deg</div><br>
+    <div id="grad5" style="text-align:center;">90deg</div><br>
+    <div id="grad6" style="text-align:center;">180deg</div><br>
+    <div id="grad7" style="text-align:center;">-90deg</div>
+
+
+</body>
+
+</html>

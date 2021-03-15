@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        div {
+            width: 500px;
+            height: 350px;
+            padding: 5px;
+            border: 10px solid blue;
+            margin: 15px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Box Model</h1>
+
+    <p><i>keyword : box model css</i></p>
+
+    <img src="../property/css.png">
+    <img src="../property/css2.png">
+    <img src="../property/css3.png">
+    <img src="../property/css.gif">
+
+    <ul>
+        <li>Dalam css menganggap ada kotak yang membungkus setiap elemen HTML. Terdiri dari: margin, border, padding, dan konten sebenarnya</li><br>
+        <li>penjelasan bagian : </li>
+        <ul>
+            <li>Content - The content of the box, where text and images appear</li>
+            <li>Padding - Clears an area around the content. The padding is transparent</li>
+            <li> Border - A border that goes around the padding and content</li>
+            <li>Margin - Clears an area outside the border. The margin is transparent</li>
+        </ul> <br>
+
+        <li>Ukuran total elemen harus dihitung seperti ini: </li>
+        <ul>
+            <li>Panjang elemen total = width + left padding + right padding + left border + right border + left margin + right margin</li>
+            <li>Tinggi elemen total = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin</li>
+        </ul>
+    </ul>
+
+
+
+    contoh : <br>
+
+    <p>width : 500px <br> height : 350px <br> margin : 15px <br> border : 10px <br> padding : 5px </p>
+    hasilnya <br>
+    <i>panjang/width elemen total = 500 + 5 + 5 + 10 + 10 + 15 + 15 = 560px<br>
+    tinggi/height elemen total = 350 + 5 + 5 + 10 + 10 + 15 + 15 = 410px</i> <br>
+
+    <div>content//element</div>
+
+
+    <a href="../indox.html">Back to Home</a>
+</body>
+
+</html>

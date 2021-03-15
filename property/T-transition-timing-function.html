@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition-timing-function</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>transition-timing-function</h2>
+    <hr>
+
+    <ul>
+        <li>menentukan kurva kecepatan efek transisi.Properti ini memungkinkan efek transisi mengubah kecepatan selama durasinya.</li>
+        <li>value :
+            <ul>
+                <li>ease - menentukan efek transisi dengan awal yang lambat, lalu cepat, lalu akhiri perlahan (ini default) </li>
+                <li>linear - menentukan efek transisi dengan kecepatan yang sama dari awal hingga akhir</li>
+                <li>ease-in - menentukan efek transisi dengan awal yang lambat</li>
+                <li> ease-out - menentukan efek transisi dengan akhir yang lambat</li>
+                <li>ease-in-out - menentukan efek transisi dengan awal dan akhir yang lambat</li>
+                <li>cubic-bezier(n,n,n,n) - memungkinkan Anda menentukan nilai Anda sendiri dalam fungsi kubik-bezier</li>
+            </ul>
+        </li>
+        <li>cara pakai :</li>
+    </ul>
+
+    <pre><code>
+        div {
+            <span>transition-timing-function</span>: ease-in-out;
+        }
+    </code></pre><br>
+
+    <h3>preview :</h3>
+    <iframe src="reference-prop.html" name="hehe" height="300px" width="80%" title="fixed"></iframe>
+    <h3><a href="examples/T-transition-timing-function.html" target="hehe">Click to view Example of transition-timing-function</a></h3><br><br>
+
+    <a href="../property/reference-prop.html">Back to Reference</a>
+</body>
+
+</html>

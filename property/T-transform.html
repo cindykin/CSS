@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            line-height: 200%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>transform</h2>
+    <hr>
+
+    <ul>
+        <li>transformasi 2D atau 3D untuk elemen. Properti ini memungkinkan Anda untuk memutar, menskalakan, memindahkan, memiringkan, dll</li>
+        <li>width = sumbu x = tidur || height = sumbu y = tegak</li>
+        <li>value : (<a href="https://www.w3schools.com/cssref/css3_pr_transform.asp">yg kek translateZ(z) x,y,z mereka bisa cuma kepanjangan klo ditaruh disini</a>) </li>
+        <ul>
+            <li>none - tidak ada transformasi</li>
+            <li>translate(x,y) - memindahkan elemen dari tempatnya (sesuai dengan parameter yang diberikan untuk sumbu X dan sumbu Y) (pergerakan bukan dari ujung browser, melainkan dari tempat awalnya) </li>
+            <li>rotate(angle) - memutar elemen searah jarum jam/berlawanan arah jarum jam (nilainya negatif) sesuai dengan derajat tertentu</li>
+            <li>scale(x,y) - menambah/mengurangi ukuran elemen (sesuai dengan parameter yang diberikan untuk width & height).</li>
+            <li>skew(x,y) - memiringkan elemen di sepanjang sumbu X dan Y dengan sudut yang diberikan</li>
+            <li>matrix(n,n,n,n,n,n) - menggabungkan semua metode transformasi 2D menjadi satu.</li> <br>
+
+            <li>matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)</li>
+            <li>rotate3d(x,y,z,angle) - memutar elemen searah jarum jam/berlawanan arah jarum jam</li>
+            <li>translate3d(x,y,z) - memindahkan elemen dari tempatnya</li>
+            <li>scale3d(x,y,z) - menambah/mengurangi ukuran elemen</li>
+            <li>perspective(n) - define a perspective view for 3D elemen</li> <br>
+            <li>initial - mengubahnya ke nilai default</li>
+            <li>inherit - mewarisi nilai property parent elemennya</li>
+
+        </ul>
+
+        <li>cara pakai :</li>
+    </ul>
+
+    <pre><code>
+        div {
+            <span>transform</span>: translate(50px,100px);
+        }
+    </code></pre><br>
+
+    <h3>preview :</h3>
+    <iframe src="reference-prop.html" name="hehe" height="300px" width="80%" title="fixed"></iframe>
+    <h3><a href="examples/T-transform.html" target="hehe">Click to view Example of transform 2D</a></h3><br><br>
+
+    <a href="../property/reference-prop.html">Back to Reference</a>
+</body>
+
+</html>

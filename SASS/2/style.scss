@@ -1,0 +1,16 @@
+body {
+    background-color: yellowgreen;
+}
+
+.section1, .section2 {
+    h1, p {
+        background-color: antiquewhite;
+    }
+}
+
+
+.article {
+    & &-sub {
+        background-color: yellowgreen;
+    }
+}

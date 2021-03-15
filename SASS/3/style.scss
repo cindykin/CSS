@@ -1,0 +1,44 @@
+// CSS STYLE
+
+/*
+:root {
+    --first: #000;
+    --second: #fff;
+}
+
+body {
+    background: var(--first);
+}
+
+h1 {
+    color: var(--second);
+}
+*/
+
+
+
+// SCSS STYLE
+$first: #000;
+$two: #fff;
+
+body {
+    background: $first;
+}
+
+h1 {
+    color: $two;
+}
+
+$alert : (
+    'danger': red,
+    'success': green,
+    'warning': yellow
+);
+
+h1 {
+    color: map-get($map: $alert, $key: 'success')
+}
+
+h2 {
+    color: map-get($alert, 'danger');
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-size</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>background-size</h2>
+    <hr>
+    <ul>
+        <li>digunakan utk memspesifikan ukuran bg image</li>
+        <li>valuenya :</li>
+        <ul>
+            <li>auto(default) - bg image ditampili dlm original size</li>
+            <li>length - nentukan width & height dari bg image. value 1 = width, value 2 = height, jika cuma 1 yg diketik value 2 = auto</li>
+            <li>% - nentukan width & height dgn % dari size parent elemennya</li>
+            <li>cover - resize bg image utk mencover seluruh container biasa distretch</li>
+            <li>contain - resize image utk mempastikan image terlihat. Jadi bila img lebih kecil drpd kontainer jadinya sisa kosongnya warna putih</li>
+            <li>initial - mengubahnya ke nilai default</li>
+            <li>inherit - mewarisi nilai property parent elemennya</li>
+        </ul>
+        <li>cara pakai : </li>
+    </ul>
+    <pre><code>
+        body {
+            <span>background-size</span>: 300px 500px;
+        }        
+    </code></pre>
+
+    <h3>preview :</h3>
+    <iframe src="reference-prop.html" name="hehe" height="300px" width="80%" title="fixed"></iframe>
+    <h3><a href="examples/B-background-size.html" target="hehe">Click to view Example of background size</a></h3><br><br>
+
+    <a href="../property/reference-prop.html">Back to Reference</a>
+</body>
+
+</html>

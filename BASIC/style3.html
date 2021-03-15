@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Selectors</h1>
+
+    <p><i>keyword : selektor css</i></p>
+
+    <img src="css.gif" alt="cek w3">
+    
+    <p>
+        Selektor CSS digunakan utk menemukan/menselect html elemen yang mau distyle. <br>
+
+        Selektor CSS bisa dibagi ke 5 kategori :
+        <ul>
+            <li>Simple selectors (select elements based on name, id, class)</li>
+            <li><a href="">Combinator selectors (select elements based on a specific relationship between them)</a></li>
+            <li><a href="">Pseudo-class selectors (select elements based on a certain state)</a></li>
+            <li><a href="">Pseudo-elements selectors (select and style a part of an element)</a></li>
+            <li><a href="">Attribute selectors (select elements based on an attribute or attribute value)</a></li>
+        </ul>
+        Halaman ini bakal jelasi basic selector css.
+    </p>
+
+
+    <ul>   
+        <li><h3>Selector Element</h3></li>
+            <p>memilih elemen html berdasarkan nama elemennya</p>
+            <code>
+                <span>div</span> { <--- disini elemen div <br>
+                    &nbsp; color: red; <br>
+                }
+            </code>
+            <p><i>untuk setiap elemen div yang ada ubah warnanya jadi merah</i></p>
+
+
+
+
+        <li><h3>Selector ID</h3></li>
+            <p>memanfaatkan attr id dari elemen html, utk memilih elemen tertentu yg memiliki id tsb</p>
+            <p>tambahkan ' # ' sebelum value attr id tsb</p>
+            <code>
+                <span>#hehe</span> { <--- dihtmlnya bgini &lt;span id="hehe"&gt;<br>
+                    &nbsp; border: 1px solid black; <br>
+                }
+            </code>
+            <p><i>untuk setiap elemen yang memiliki attr id dengan nilai hehe tambahkan border 1px warna hitam</i></p>
+
+
+
+
+        <li><h3>Selector Class</h3></li>
+            <p>memanfaatkan attr class dari elemen html, utk memilih elemen tertentu yg memiliki class tsb</p>
+            <p>tambahkan ' . ' sebelum value attr class tsb</p>
+            <code>
+                <span>.para3</span> { <--- dihtmlnya bgini &lt;h1 class="para3"&gt;<br>
+                    &nbsp; text-align: center; <br>
+                }
+            </code>
+            <p><i>untuk setiap elemen yang memiliki attr class dengan nilai para3 ubah rata teksnya jadi tengah</p></i> <br>
+
+            <p>bisa juga jadi spesifikan elemen class yg dimaksud, jadi elemen lain yg punya class tsb tidak terpengaruh</p>
+            <code>
+                <span>div.hoho</span> { <--- dihtmlnya bgini &lt;div class="hoho"&gt;<br>
+                    &nbsp; color: orange; <br>
+                }
+            </code>
+            <p><i>untuk setiap elemen div yang memiliki attr class dengan nilai para3 ubah rata teksnya jadi tengah</p></i>
+
+        <li><h3>Selector Universal</h3></li>
+            <p>memilih SEMUA ELEMEN HTML yg berada dalam tag html</p>
+            <p>hanya dengan ' * '</p>
+            <code>
+                <span>*</span> { <br>
+                    &nbsp; color: white; <br>
+                }
+            </code>
+            <p><i>untuk semua elemen html ubah warnanya menjadi putih</p></i>
+
+        <li><h3>Selector Group</h3></li>
+            <p>ini biasaa</p>
+            <code>
+                <span>h2</span> { <br>
+                    &nbsp; font-size: 20px; <br>
+                } <br>
+                <span>p</span> { <br>
+                    &nbsp; font-size: 20px; <br>
+                } <br>
+                <span>span</span> { <br>
+                    &nbsp; font-size: 20px; <br>
+                } <br>
+            </code>
+
+            <p>ini yg disebut dgn grup selector, kombinasi bisa pake id, kelas, dsb. <br>STYLE MEREKA SEMUA JADI SAMA</p>
+            <code>
+                <span>h2, p, span</span> { <br>
+                    &nbsp; font-size : 20px; <br>
+                } <br>
+            </code>
+            <p><i>untuk semua elemen h2, p, span ubah ukuran fontnya menjadi 20px</p></i> 
+    </ul>
+    
+    <a href="../indox.html">Back to Home</a>
+</body>
+</html>

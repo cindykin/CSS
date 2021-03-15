@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SH-margin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>SHORT HAND-margin</h2>
+    <hr>
+
+    <img src="css.png" alt="keterangan">
+
+    <ul>
+        <li>untuk membuat ruang disekeliling elemen, letaknya diluar border, transparan</li>
+        <li>untuk ke4 nilai margin ingat searah jarum jam : atas, kanan, bawah, kiri</li>
+        <li>boleh pakai nilai negatif spt -10px</li>
+        <li>Margin atas dan bawah elemen terkadang diciutkan menjadi margin tunggal yang nilainya = cuma mengambil nilai margin terbesar dari kedua margin, yg nilai margin terkecil tidak berpengaruh. Ini tidak terjadi pada margin kiri dan kanan! Hanya margin atas dan bawah!</li>
+        <li>value lain selain value shorthand :</li>
+          <ul>
+            <li>auto - buat elemen jadi ditengah secara horizontal (lebar/tidur) berdasar elemen parentnya </li>
+            <li>inherit - buat elemen copy nilai margin elemen parentnya</li>
+          </ul>
+        <li><a href="examples/M-sh-margin.html">nilai shorthand</a> untuk : (tak apa2 jika salah satu nilai dibwh hilang, selama masih sesuai urutan)
+            <ul>
+                <li>margin-top</li>
+                <li>margin-right</li>
+                <li>margin-bottom</li>
+                <li>margin-left</li>
+            </ul>
+        </li>
+
+        <h3>aturan shorthand</h3>
+        <li>jika ada 4 nilai property margin :
+          <ul>
+            <li>margin : 30px 0px 20px 10px</li>
+              <ul>
+                <li>margin-top : 30px</li>
+                <li>margin-right : 0px</li>
+                <li>margin-bottom : 20px</li>
+                <li>margin-left : 10px</li>
+              </ul>
+          </ul>
+        </li><br>
+
+        <li>jika ada 3 nilai property margin :
+          <ul>
+            <li>margin : 30px 10px 20px</li>
+              <ul>
+                <li>margin-top : 30px</li>
+                <li>margin-right : 10px</li>
+                <li>margin-bottom : 20px</li>
+                <li>margin-left : 10px</li>
+              </ul>
+          </ul>
+        </li><br>
+
+        <li>jika ada 2 nilai property margin :
+          <ul>
+            <li>margin : 10px 5px</li>
+              <ul>
+                <li>margin-top : 10px</li>
+                <li>margin-right : 5px</li>
+                <li>margin-bottom : 10px</li>
+                <li>margin-left : 5px</li>
+              </ul>
+          </ul>
+        </li><br>
+
+        <li>jika cuma ada 1 nilai property margin :
+          <ul>
+            <li>margin : -10px</li>
+              <ul>
+                <li>margin-top : -10px</li>
+                <li>margin-right : -10px</li>
+                <li>margin-bottom : -10px</li>
+                <li>margin-left : -10px</li>
+              </ul>
+          </ul>
+        </li><br>
+
+        <li>cara pakai :</li>
+    </ul>
+
+    <pre><code>
+        body {
+            <span>margin</span>: margin-top margin-right margin-bottom margin-left;
+        }
+    </code></pre><br>
+
+    <h3>preview :</h3>
+    <iframe src="reference-prop.html" name="hehe" height="300px" width="80%" title="fixed"></iframe>
+    <h3><a href="examples/M-sh-margin.html" target="hehe">Click to view Example of shorthand margin</a></h3><br><br>
+
+    <a href="../property/reference-prop.html">Back to Reference</a>
+</body>
+
+</html>

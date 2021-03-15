@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>position</h2>
+    <hr>
+
+    <ul>
+        <li>menetapkan jenis penentuan posisi yang digunakan untuk sebuah elemen</li>
+        <li>value :</li>
+        <ul>
+            <li>static (default) - elemen diposisikan sesuai dgn aliran normal dokumen (property top, right, bottom, left, dan z-index tidak berpengaruh)</li>
+            <li>relative - posisi elemen tidak hilang, elemen jadi 2d</li> <br>
+
+            <p>seluruh elemen 2d (property top, right, bottom, left, z-index bisa dipakai) top 0 posisinya dimulai dari ujung browser bukan dari elemen parentnya</p> <br>
+            <li>absolute - posisi elemen hilang, elemen jadi 2d. Posisi elemen tidak bergantung pada posisi parent, melainkan pada halaman dokumen</li>
+            <li>fixed - Perilaku sama seperti absolute, selalu relatif terhadap dokumen, bukan parent tertentu, bedanya tidak terpengaruh oleh scroll</li> <br>
+
+            <li>-webkit-sticky - Perilaku sama seperti relative, hingga lokasi scroll area pandang mencapai ambang yang ditentukan, di mana elemen mengambil posisi tetap yang diperintahkan untuk tetap</li>
+            <li>initial - mengubahnya ke nilai default</li>
+            <li>inherit - mewarisi nilai property parent elemennya, nilai posisi tidak menurun, jadi ini dapat digunakan untuk memaksanya secara khusus, dan mewarisi nilai pemosisian dari induknya</li>
+        </ul>
+
+        <li>cara pakai :</li>
+    </ul>
+
+    <pre><code>
+        body {
+            <span>position</span>: -webkit-sticky;
+        }
+    </code></pre><br>
+
+    <h3>preview :</h3>
+    <iframe src="reference-prop.html" name="hehe" height="300px" width="80%" title="fixed"></iframe>
+    <h3><a href="examples/P-position.html" target="hehe">Click to view Example of position</a></h3><br><br>
+
+    <a href="../property/reference-prop.html">Back to Reference</a>
+</body>
+
+</html>

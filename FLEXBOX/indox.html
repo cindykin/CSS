@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+
+<body>
+    <h1>Flexbox Module</h1>
+    <a href="https://translate.google.co.id/translate?hl=id&sl=auto&tl=id&u=https%3A%2F%2Fwww.freecodecamp.org%2Fnews%2Fflexbox-the-ultimate-css-flex-cheatsheet%2F">referensi wow</a><br>
+    <a href="https://translate.google.co.id/translate?hl=id&sl=auto&tl=id&u=https%3A%2F%2Fcss-tricks.com%2Fsnippets%2Fcss%2Fa-guide-to-flexbox%2F">referensi trick</a><br>
+    <img src="">
+    <ul>
+        <li>main-axis</li>
+    </ul>
+
+
+    <h2>Flex Container (Parent)</h2>
+    <p>property yang bisa dipakai : </p>
+    <ul>
+        <li>display: flexbox | inline-flex; <br> = memberitahu kita akan pake modul flexbox</li>
+        <li>flex-direction : row | row-reverse | column | column-reverse; <br> = mengontrol bagaimana item didalam container ditampilkan</li>
+        <li>flex-wrap: nowrap | wrap | wrap-reverse; <br> = mengubah item jadi lebih dari 1 baris. Flexbox secara default akan mencoba memasukkan semua elemen ke dalam satu baris</li>
+        <li>flex-flow:
+            <‘flex-direction’> ||
+                <‘flex-wrap’> <br> = shorthand flex-direction & flex-wrap</li>
+        <li>justify-content: flex-start | flex-end | center | space-between | space-around; <br> = menyelaraskan/align item didalam container di sepanjang main axis</li>
+        <li>align-items: flex-start | flex-end | center | baseline | stretch; <br> = menyelaraskan item di sepanjang cross axis</li>
+        <li>align-content: flex-start | flex-end | center | space-between | space-around | stretch;<br> = menyelaraskan item yg punya lebih dr 1 baris</li>
+    </ul><br><br>
+
+    <h2>Flex Item (Child)</h2>
+    <p>property yg bisa dipakai : </p>
+    <ul>
+        <li>order: [integer]; <br> = mengontrol urutan kemunculannya dalam container flex</li>
+        <li>flex-grow: [number]; /* default 0 */ <br> = mengontrol urutan kemunculannya dalam wadah fleksibel</li>
+        <li>flex-shrink: [number]; /* default 1 */ <br> = menentukan kemampuan item fleksibel untuk menyusut jika perlu</li>
+        <li>flex-basis: [length] | auto; /* default auto */ <br> = menentukan ukuran default elemen sebelum ruang yang tersisa didistribusikan</li>
+        <li>flex: none | [
+            < 'flex-grow'>
+                < 'flex-shrink'> ||
+                    < 'flex-basis'> ] <br> = shorthand flex-grow, flex-shrink, flex-basis</li>
+        <li>align-self: auto | flex-start | flex-end | center | baseline | stretch; <br> = memungkinkan perataan default (atau yang ditentukan oleh align-items) untuk diganti untuk item flex individual</li>
+    </ul>
+</body>
+
+</html>

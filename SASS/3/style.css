@@ -1,0 +1,22 @@
+/*
+:root {
+    --first: #000;
+    --second: #fff;
+}
+
+body {
+    background: var(--first);
+}
+
+h1 {
+    color: var(--second);
+}
+*/
+body {
+  background: #000;
+}
+
+h1 {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

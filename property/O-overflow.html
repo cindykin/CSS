@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>overflow</h2>
+    <hr>
+
+    <ul>
+        <li>mengontrol apa yang terjadi pada konten yang lebih besar untuk daripada kontainernya</li>
+        <li>hanya bekerja utk block elemen dengan ketinggian tertentu</li>
+        <li>value :</li>
+        <ul>
+            <li>visible (default) - kelebihan tak terpotong, konten yg berlebih tampil sampai diluar kontainer</li>
+            <li>hidden - kelebihan terpotong, sisa konten menjadi tak terlihat</li>
+            <li>scroll - kelebihan terpotong, tapi ditambahkan scrollbar utk melihat kelanjutan dari konten</li>
+            <li>auto - mirip seperti scroll, tapi menambahkan scrollbar hanya jika diperlukan</li>
+        </ul>
+
+        <li>cara pakai :</li>
+    </ul>
+
+    <pre><code>
+        body {
+            <span>overflow</span>: hidden;
+        }
+    </code></pre><br>
+
+    <h3>preview :</h3>
+    <iframe src="reference-prop.html" name="hehe" height="300px" width="50%" title="fixed"></iframe>
+    <h3><a href="examples/O-overflow.html" target="hehe">Click to view Example of overflow</a></h3><br><br>
+
+    <a href="../property/reference-prop.html">Back to Reference</a>
+</body>
+
+</html>

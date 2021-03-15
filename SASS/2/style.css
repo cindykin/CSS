@@ -1,0 +1,12 @@
+body {
+  background-color: yellowgreen;
+}
+
+.section1 h1, .section1 p, .section2 h1, .section2 p {
+  background-color: antiquewhite;
+}
+
+.article .article-sub {
+  background-color: yellowgreen;
+}
+/*# sourceMappingURL=style.css.map */

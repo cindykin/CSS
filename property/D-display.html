@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>display</h2>
+    <hr>
+
+    <ul>
+        <li>digunakan untuk menentukan perilaku display (jenis dari rendering box) dari sebuah elemen</li>
+        <li>value :</li>
+        <ul>
+            <li>inline - tidak bisa diatur sizenya, ukuran elemen pas dengan isinya</li>
+            <li>block - bisa atur size, enter gila, width memenuhi lebar halaman</li>
+            <li>inline-block - bisa atur size, width memenuhi lebar halaman</li>
+            <li>none - menyembunyikan elemen tanpa menghapus, tempatnya menjadi hilang (kalo visibility : hidden membuat elemen hilang, tapi tempatnya masih ada)</li> <br>
+            <li>flex/grid - menampilkan elemen jadi block-level flex/grid container</li>
+            <li>inline flex/grid - menampikan elemen jadi inline-level flex/grid container</li>
+            <li>initial - mengubahnya ke nilai default</li>
+            <li>inherit - mewarisi nilai property parent elemennya</li>
+        </ul>
+
+        <li>cara pakai :</li>
+    </ul>
+
+    <pre><code>
+        body {
+            <span>display</span>: grid;
+        }
+    </code></pre><br>
+
+    <h3>preview :</h3>
+    <iframe src="reference-prop.html" name="hehe" height="300px" width="80%" title="fixed"></iframe>
+    <h3><a href="examples/D-display.html" target="hehe">Click to view Example of display</a></h3><br><br>
+
+    <iframe src="reference-prop.html" name="haha" height="300px" width="80%" title="fixed"></iframe>
+    <h3><a href="examples/D-display-inline-block.html" target="haha">Click to view Example of display inline-block</a></h3><br><br>
+
+    <a href="../property/reference-prop.html">Back to Reference</a>
+</body>
+
+</html>
