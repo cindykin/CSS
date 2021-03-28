@@ -1,0 +1,13 @@
+
+.header ul {
+    @include inline-list();
+    li {
+        background-color: map-get($palette, 'strong');
+        padding: 10px;
+        a {
+            color: map-get($palette, 'base');
+            text-decoration: none;
+        }
+    }
+
+}

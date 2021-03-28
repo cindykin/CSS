@@ -1,0 +1,108 @@
+@mixin profile-img($size, $circle: false) {
+    width: $size;
+    height: $size;
+    border: 5px solid white;
+    box-shadow: 1px 1px 3px rgba($color: #000, $alpha: 0.3);
+
+    @if $circle {
+        border-radius: 50%;
+    }
+}
+
+.square-img {
+    @include profile-img(100px, $circle:false)
+}
+
+.circle-img {
+    @include profile-img(50px, $circle:true)
+}
+
+
+
+
+
+
+// IF
+
+$light-text : #000;
+$light-bg : #ffffff;
+$dark-text: #ffffff;
+$dark-bg: #000;
+
+@mixin color-mode($light-mode: true){
+    @if $light-mode {
+        color: $light-text;
+        background: $light-bg;
+    } @else {
+        color: $dark-text;
+        background: $dark-bg;   
+    }
+
+}
+
+body {
+    @include color-mode()
+}
+
+
+
+
+// IF ELSE IF
+
+@mixin triangle($size, $color, $direction) {
+    width: 0;
+    height: 0;
+    border: $size solid transparent;
+    @if $direction == top {
+        border-bottom-color: $color; 
+    } @else if $direction == right {
+        border-left-color: $color;
+    } @else if $direction == bottom {
+        border-top-width: $color;
+    } @else {
+        border-right-color: $color;
+    }
+
+}
+
+.triangle {
+    @include triangle(50px, red, top)
+}
+
+
+// FOR
+$color: blue;
+ul.gradient {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @for $i from 1 to 11 {
+        li:nth-child(#{$i}) {
+            background: lighten($color, $i * 3%);
+        }
+    }
+}
+
+
+
+// while
+
+$color: blue;
+ul.gradient {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    $i: 1;
+    @while $i < 11 {
+        li:nth-child(#{$i}) {
+            background: darken($color, $i * 3%);
+        }
+
+        $i: $i + 1;
+    }
+}
+
+
+
+
+// each

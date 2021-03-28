@@ -1,0 +1,12 @@
+
+.footer ul {
+    @include inline-list();
+    li {
+        padding: 10px;
+        background: map-get($palette, 'average');
+        a {
+            color: map-get($palette, 'base' );
+            text-decoration: none;
+        }
+    }
+}
